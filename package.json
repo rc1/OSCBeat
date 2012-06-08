@@ -1,0 +1,14 @@
+{
+ 	"name" 			: "oscbeat",
+ 	"version" 		: "0.0.1",
+  	"description" 	: "Send a tempo beat osc messsage",
+  	"dependencies" 	: {
+  		"commander" : "0.6.1",
+  		"node-osc"	: "0.1.2"
+  	},
+  	"private" : true,
+  	"preferGlobal":"true",
+   	"bin":{
+      	"oscbeat":"./bin/oscbeat"
+   	}
+}
