@@ -1,6 +1,6 @@
 var  program = require('commander');
 
-program.version('0.0.1')
+program.version('0.0.2')
     .option('-p, --port [number]', 'Port to send messages to', 3333)
     .option('-h, --host [address]', 'IP addresst to send messages to', '127.0.0.1')
     .option('-b, --bpm [number]', 'Beats per minute', 128)
@@ -21,4 +21,4 @@ setInterval(function () {
     }
 }, bpm);
 
-console.log("At", program.bpm,"sending the address '", program.address, "' to ip", program.host,"on port", program.port);
+console.log("At", program.bpm, "(", 60000/program.bpm ,") sending the address '", program.address, "' to ip", program.host,"on port", program.port);
